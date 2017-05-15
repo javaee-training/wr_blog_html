@@ -2,10 +2,105 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>浏览首页</title>
+<!-- 添加字体符号链接 -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>hello word!</h1>
+<div class="container">
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- logo -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">张三的博客</a>
+			</div>
+			<!-- 用户区域 -->
+			<ul class="nav navbar-nav navbar-right">
+				<!-- 注册 -->
+				<li><a href="#">注册</a></li>
+				<!-- 登录 -->
+				<li><a href="#">登录</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 内容区 -->
+	<div class="row">
+		<!-- 左侧文章列表区 -->
+		<div class="col-md-8 col-sm-8">
+			<!-- 文章内容区 -->
+			<div class="panel panel-default">
+				<div class="panel-heading">文章</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item">
+							<article>
+								<h2><a href="./blog/view.html">望岳</a></h2>
+								<label class="fa fa-tags">诗词歌赋</label>
+								<ul style="{list-style: none;}">
+									<li style="list-style: none;">岱宗夫如何，齐鲁青未了。</li>
+									<li style="list-style: none;">造化钟神秀，阴阳割昏晓。</li>
+									<li style="list-style: none;">荡胸生层云，决眦入归鸟。</li>
+									<li style="list-style: none;">会当凌绝顶，一览众山小。</li>
+								</ul>
+								<!-- 时间格式有待更改 -->
+								<label>杜甫 2017年1月1日 10:00</label>
+								<a href="./blog/view.html">查看更多</a>
+								<a href="./blog/edit.html">编辑</a>
+							</article>
+						</li>
+						<li class="list-group-item">
+							<article>
+								<h2><a href="./blog/view.html">鹿柴</a></h2>
+								<label class="fa fa-tags">诗词歌赋</label>
+								<ul style="{list-style: none;}">
+									<li style="list-style: none;">空山不见人，但闻人语响。</li>
+									<li style="list-style: none;">返影入深林，复照青苔上。</li>
+								</ul>
+								<!-- 时间格式有待更改 -->
+								<label>王维 2017年1月1日 10:00</label>
+								<a href="./blog/view.html">查看更多</a>
+								<a href="./blog/edit.html">编辑</a>
+							</article>
+						</li>
+						<li class="list-group-item" style="text-align: center;">没有文章</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 翻页区 -->
+			<div>
+				<nav aria-label="...">
+					<ul class="pager">
+						<li><a href="#">上一页</a></li>
+						<li><a href="#">下一页</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- 右侧标签区 -->
+		<div class="col-md-4 col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">标签</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item"><h5><a href="" class="fa fa-tags">诗词歌赋</a></h5></li>
+						<li class="list-group-item"><h5><a href="" class="fa fa-tags">技术笔记</a></h5></li>
+						<li class="list-group-item" style="text-align: center;">没有定义标签 </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>

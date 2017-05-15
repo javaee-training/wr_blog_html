@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 文档的标题，显示在浏览器的标题栏中 -->
+<title>登录2</title>
+<!-- 引入外部的样式文件，注意文件顺序，后续的文件会覆盖前面文件中定义功能类似的样式 -->
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- 引入外部的javascript文件，这里以 CDN 的方式引用 -->
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <!-- 标题栏 -->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../index.html">张三的博客</a>
+        </div>
+    </nav>
+    
+    
+    
+    <div class="center-block" style="max-width: 400px">
+    	<div class="alert alert-danger" role="alert">
+    	<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 用户名不能为空
+    	</div>
+    	<div class="panel panel-default" >
+  		<div class="panel-heading">注册账号</div>
+  			<div class="panel-body">
+    		<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">用户名</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="用户名">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">密码</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+  </div>
+  </div>
+  <button type="submit" class="form-control btn btn-primary btn-default ">注册</button>
+</form>
+  			</div>
+		</div>
+	</div>
+    </div>
+</div>
+
+</body>
+</html>
